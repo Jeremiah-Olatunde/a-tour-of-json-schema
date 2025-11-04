@@ -1,0 +1,40 @@
+{
+  "target": "./l01.schema.json",
+  "tests": [
+    {
+      "valid": true,
+      "description": "Base example",
+      "data": { "name": "John Doe", "age": 25 }
+    },
+    {
+      "valid": true,
+      "description": "Case 1",
+      "data": { "name": "John Doe", "age": 30, "location": "New York" }
+    },
+    {
+      "valid": false,
+      "description": "Case 2",
+      "data": { "name": "John Doe", "age": 30.5 }
+    },
+    {
+      "valid": false,
+      "description": "Case 3",
+      "data": { "name": "John Doe", "age": "30" }
+    },
+    {
+      "valid": false,
+      "description": "Case 4",
+      "data": { "name": 30 }
+    },
+    {
+      "valid": true,
+      "description": "Case 5",
+      "data": { "name": "John Doe" }
+    },
+    {
+      "valid": true,
+      "description": "Case 6",
+      "data": { "name": "John Doe", "age": 30, "location": "New York" }
+    }
+  ]
+}
