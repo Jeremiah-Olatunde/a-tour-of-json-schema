@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/01-Getting-Started/04-Enumerated-Values",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "hobbies": {
+      "enum": ["reading", "writing", "painting"]
+    }
+  }
+}
