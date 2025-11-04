@@ -1,0 +1,69 @@
+{
+  "target": "./l02.schema.json",
+  "tests": [
+    {
+      "valid": false,
+      "description": "Case 1",
+      "data": { "name": "person", "age": 23 }
+    },
+    {
+      "valid": true,
+      "description": "Case 2",
+      "data": {
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "middleName": "Smith"
+        },
+        "age": 23
+      }
+    },
+    {
+      "valid": false,
+      "description": "Case 3",
+      "data": {
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "middleName": null
+        },
+        "age": 23
+      }
+    },
+    {
+      "valid": false,
+      "description": "Case 4",
+      "data": {
+        "name": {
+          "firstName": "John",
+          "lastName": null,
+          "middleName": "Smith"
+        },
+        "age": 23
+      }
+    },
+    {
+      "valid": false,
+      "description": "Case 5",
+      "data": {
+        "name": {
+          "firstName": null,
+          "lastName": "Doe",
+          "middleName": "Smith"
+        },
+        "age": 23
+      }
+    },
+    {
+      "valid": false,
+      "description": "Case 6",
+      "data": {
+        "name": {
+          "firstName": 0,
+          "lastName": "Smith"
+        },
+        "age": 23
+      }
+    }
+  ]
+}
