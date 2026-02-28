@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/01-Specifying-Length-of-an-Array",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+
+    "age": {
+      "type": "integer"
+    },
+    "phones": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{3}-\\d{3}-\\d{4}$"
+      }
+    }
+  }
+}
