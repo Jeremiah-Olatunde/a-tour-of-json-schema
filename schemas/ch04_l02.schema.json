@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/02-Unique-Items",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+
+    "age": {
+      "type": "integer"
+    },
+    "phones": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{3}-\\d{3}-\\d{4}$"
+      }
+    }
+  }
+}
