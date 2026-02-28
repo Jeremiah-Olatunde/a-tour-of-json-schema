@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/03-Objects/03-Constraining-Number-of-Properties",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "contactMethods": {
+      "type": "object",
+      "minProperties": 2,
+      "maxProperties": 5,
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}
