@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/03-Objects/01-Pattern-Properties",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    }
+  },
+  "patternProperties": {
+    "^DEPT-[0-9]{3}$": {
+      "type": "string",
+      "pattern": "^[A-Z]*$"
+    }
+  },
+  "additionalProperties": false
+}
