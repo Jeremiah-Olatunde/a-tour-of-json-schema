@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/02-Primitive-Types/06-Multiple-of-a-Number",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "hourlyWage": {
+      "type": "number",
+      "multipleOf": 0.25,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}
