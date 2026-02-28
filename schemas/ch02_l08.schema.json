@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/02-Primitive-Types/08-Defining-Constant-Values",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "const": 25
+    },
+    "companyName": {
+      "const": "MyCompany"
+    }
+  }
+}
