@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/04-Additional-Items-in-Tuples",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "array",
+      "items": { "type": "string" },
+      "prefixItems": [
+        { "type": "integer" },
+        { "type": "string" },
+        { "enum": ["Street", "Avenue", "Boulevard"] },
+        { "enum": ["NW", "NE", "SE", "SW"] }
+      ]
+    }
+  }
+}
