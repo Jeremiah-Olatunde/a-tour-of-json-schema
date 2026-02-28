@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/02-Primitive-Types/01-Constraining-String-Length",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "postalCode": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 6
+    },
+    "phoneNumber": {
+      "type": "string",
+      "minLength": 10
+    }
+  }
+}

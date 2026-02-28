@@ -1,5 +1,5 @@
 {
-  "target": "./l01.schema.json",
+  "target": "../schema/l01.schema.json",
   "tests": [
     {
       "valid": true,

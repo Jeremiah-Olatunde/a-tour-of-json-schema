@@ -5,6 +5,7 @@
   "properties": {
     "name": {
       "type": "object",
+      "required": ["firstName", "lastName"],
       "properties": {
         "firstName": {
           "type": "string"
@@ -15,8 +16,7 @@
         "middleName": {
           "type": "string"
         }
-      },
-      "required": ["firstName", "lastName"]
+      }
     },
     "age": {
       "type": "integer"
