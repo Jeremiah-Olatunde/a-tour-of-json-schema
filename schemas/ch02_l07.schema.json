@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/02-Primitive-Types/07-Enumerated-Values-II",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "performanceRating": {
+      "enum": [1, 2, 3, 4, 5, null]
+    }
+  }
+}
