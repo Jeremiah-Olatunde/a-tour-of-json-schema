@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/03-Objects/04-Applying-Schema-to-Property-Names",
+  "type": "object",
+  "minProperties": 2,
+  "propertyNames": {
+    "pattern": "^[A-Z]{3,}$"
+  },
+  "additionalProperties": {
+    "type": ["string", "integer"]
+  }
+}
