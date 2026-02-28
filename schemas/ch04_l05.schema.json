@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/05-Enumerated-Array-Items",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "relevantDepartments": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["HR", "Finance", "IT", "Admin"]
+      }
+    }
+  }
+}
