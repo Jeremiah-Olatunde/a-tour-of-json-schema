@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/07-minContains-and-maxContains",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "workedHours": {
+      "type": "array",
+      "minContains": 2,
+      "contains": {
+        "type": "integer",
+        "minimum": 8,
+        "maximum": 12
+      }
+    }
+  }
+}
