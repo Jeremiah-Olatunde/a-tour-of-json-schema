@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/04-Arrays/06-Ensuring-Array-Content-With-Contains",
+  "type": "object",
+  "required": ["name", "age", "skills"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "skills": {
+      "minItems": 1,
+      "type": "array",
+      "contains": {
+        "type": "string",
+        "const": "JavaScript"
+      }
+    }
+  }
+}
