@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tour.json-schema.org/content/03-Objects/02-Additional-Properties",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+
+    "age": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": {
+    "type": "integer"
+  }
+}
